@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 11</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bin">
+        <img src="recyclebinicon.png" alt="">
+    </div>
+    <br>
+    <div class="folder">
+        <img src="bg-folder-removebg-preview.png" alt="">
+    </div>
+    <div class="jpg">
+        <img src="jpg.png" alt="">
+    </div>
+    <div class="opera">
+        <img src="png-transparent.png" alt="">
+    </div>
+    <div id="startup">
+        <center>
+            <img src="startmenu.PNG" alt="">
+        </center>
+    </div>
+    <div id="searchbar">
+        <center>
+            <img src="searchtab.png" alt="">
+        </center>
+    </div>
+    <div class="taskbar">
+        <!-- <img src="icons.PNG" alt=""> -->
+        <center>
+            <a target="_black">
+                <img style="margin-right: 8px;" id="win" class="icon-img-vs-code-2 hover" src="t_windows-116906-removebg-preview.png" alt="">
+            </a>
+
+            <a>
+                <img style="margin-right: 8px;" id="find-icon" class="icon-img-edge-2 hover" src="search-icon-removebg-preview.png" alt="">
+            </a>
+
+            <a target="_black" href="https://www.google.com/">
+                <img style="margin-right: 8px; background-color: #bdbdc0;" class="icon-img-edge-2 hover" src="task-view.png" alt="">
+            </a>
+
+            <a target="_black" href="https://www.google.com/">
+                <img style="margin-right: 8px;" class="icon-img hover" src="chromeicon.png" alt="">
+            </a>
+
+            <a target="_black" href="https://www.microsoft.com/en-us/"><img style="margin-right: 8px;" class="icon-img-edge hover" src="edgeicon.png" alt=""></a>
+
+            <a target="_black" href="https://code.visualstudio.com"><img style="margin-right: 8px;" class="icon-img-vs-code hover" src="visual_code-removebg-preview.png" alt=""></a>
+
+            <a target="_black" href="https://www.google.com/search?client=opera&q=file+manager&sourceid=opera&ie=UTF-8&oe=UTF-8"><img style="margin-right: 8px;" class="icon-img-edge hover" src="file-icon-removebg-preview.png" alt=""></a>
+            <img class="right" src="taskbarright.PNG" alt="">
+        </center>
+    </div>
+    <video autoplay muted>
+        <source src="video.webm" type="video/webm">
+    </video>
+    <script>
+        var win = document.getElementById('win');
+        var lul = document.getElementById('startup');
+        win.addEventListener("click", ()=>{
+        console.log("clicked");
+        if(lul.style.bottom == "60px"){
+            lul.style.bottom = "-650px"
+        }
+        else{
+            lul.style.bottom = "60px"
+            lol.style.bottom = "-650px"
+        }
+    })
+    var lol = document.getElementById('searchbar');
+    var find = document.getElementById('find-icon');
+        find.addEventListener("click", ()=>{
+        console.log("clicked");
+        if(lol.style.bottom == "60px"){
+            lol.style.bottom = "-650px"
+        }
+        else{
+            lol.style.bottom = "60px"
+            lul.style.bottom = "-650px"
+        }
+    })
+    </script>
+</body>
+</html>
